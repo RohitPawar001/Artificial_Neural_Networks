@@ -1,20 +1,20 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
-import tensorflow as tf
+
 import keras
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.layers import Dropout
 
-tf.config.run_functions_eagerly(True)
 
-data = pd.read_csv("heart-disease.csv")
+
+data = pd.read_csv("artifacts\Datasets\heart-disease.csv")
 
 # independent and dependent feature split
 x = data.iloc[:,:-1]
